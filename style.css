@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+
+}
+@font-face {
+    font-family: 'toyota_displayregular';
+    src: url('fonts/toyota_displayregular.eot');
+    src: url('fonts/toyota_displayregular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/toyota_displayregular.woff2') format('woff2'),
+         url('fonts/toyota_displayregular.woff') format('woff'),
+         url('fonts/toyota_displayregular.ttf') format('truetype'),
+         url('fonts/toyota_displayregular.svg#toyota_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'toyota_displaybold';
+    src: url('fonts/toyota_displaybold.eot');
+    src: url('fonts/toyota_displaybold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/toyota_displaybold.woff2') format('woff2'),
+         url('fonts/toyota_displaybold.woff') format('woff'),
+         url('fonts/toyota_displaybold.ttf') format('truetype'),
+         url('fonts/toyota_displaybold.svg#toyota_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fb
+{
+    float:right; 
+    margin-top: 20px;
+    width: 48px;
+    height: 48px;
+    background: url('image/fb-header.png');
+    z-index: 9000;
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.fb:hover
+{
+    float: right;
+    margin-top: 20px;"
+    width: 48px;
+    height: 48px;
+    background: url('image/fb-hover.png');
+}  
+
+.header
+{
+    background: #a51f21;
+    height: 83px;
+
+}
+
+.header img
+{
+    float: left;
+
+}
+
+.content
+{
+    width: 980px;
+    margin: 0 auto;
+    
+    /* height: 385px; */
+}
+
+.content h2
+{
+    font-family: 'toyota_displaybold';
+    font-size: 42px;
+    color:#4a4a4a;
+    text-align: center;
+}
+
+.header p
+{
+    float: left;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-right: 80px;
+    margin-top: 25px;
+    margin-left: 80px;
+    color: #FFF;
+}
+
+.banner
+{
+    width: 100%;
+}
+
+.banner img
+{
+    width: 100%;
+}
+
+.input-group-addon
+{
+    background-color: #a51f21;
+    border: none;
+    color: #fff;
+}
+
+.form-control
+{
+    border: solid 1px #a51f21;
+}
+
+.row
+{
+    padding: 15px 0;
+}
+
+input.botao-enviar 
+{
+    background-color: #A51F21;
+    color: #fff;
+    font-family: 'toyota_displaybold';
+    font-size: 22px;
+    border: 0;
+    padding: 15px 78px;
+    margin: 45px 0;
+    outline: none;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(118, 0, 2, 1);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(118, 0, 2, 1);
+    box-shadow: 0px 4px 0px 0px rgba(118, 0, 2, 1);
+}
+
+input.botao-enviar:hover
+{
+    background-color: #760002;
+
+    /*-webkit-box-shadow: 0px 4px 0px 0px rgba(165, 31, 33, 1);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(165, 31, 33, 1);
+    box-shadow: 0px 4px 0px 0px rgba(165, 31, 33, 1);*/
+}
+
+.centralizar
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer
+{
+    background-color: #e3e3e3;
+    padding: 22px 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.login
+{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.controls
+{
+    text-align: center;
+}
+
+.controls #btn-login
+{
+    background-color: #A51F21;
+    border-color: #810507;
+    color: #fff;
+}
+
+.controls #btn-login:hover
+{
+    background-color: #B34D4E;
+    border-color: #8B3C3D;
+}
+
+.table.lista
+{
+    opacity: 0;
+}
+
+.form-control:focus 
+{
+    border-color: #D53537;
+    outline: 0;
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(140, 32, 23, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(140, 32, 23, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(140, 32, 23, 0.6);
+}
+
+.bx-wrapper .bx-viewport 
+{
+    left: 0;
+}
+
+.cadastro_carteirinha input.botao-enviar 
+{
+  margin: 0;
+  font-size: 16px;
+  padding: 4px 40px;
+}

@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Feirão Toyota</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+}
+
+#boxes #dialog {
+width: 802px;
+height: 260px;
+line-height: 22px;	
+ font-family: arial;
+ background:url(etios-clube-banner_03.jpg) no-repeat;
+}
+
+#boxes #dialog1 {
+  width:375px; 
+  height:203px;
+}
+
+#dialog1 .d-header {
+  background:url(login-header.png) no-repeat 0 0 transparent; 
+  width:375px; 
+  height:150px;
+}
+
+#dialog1 .d-header input {
+  position:relative;
+  top:60px;
+  left:100px;
+  border:3px solid #cccccc;
+  height:22px;
+  width:200px;
+  font-size:15px;
+  padding:5px;
+  margin-top:4px;
+}
+
+#dialog1 .d-blank {
+  float:left;
+  background:url(login-blank.png) no-repeat 0 0 transparent; 
+  width:267px; 
+  height:53px;
+}
+
+#dialog1 .d-login {
+  float:left;
+  width:108px; 
+  height:53px;
+}
+
+#boxes #dialog2 {
+  background:url(notice.png) no-repeat 0 0 transparent; 
+  width:326px; 
+  height:229px;
+  padding:50px 0 20px 25px;
+  font-family: arial;
+}
+.close{
+	display: block;
+	float: right;
+	margin-right: 0px;
+	opacity: 1;
+	margin-top: -4px;
+}
+.close:hover, .close:focus {
+	cursor: pointer; 
+	opacity:1; 
+}
+
+</style>
+</head>
+
+<body>
+
+<!--div id="boxes">
+	<div id="dialog" class="window">
+	<a href="#" class="close"><img src="fechar-btn_03.png"></a> 
+	</div>
+</div>
+Máscara para cobrir a tela
+<div id="mask"></div--> 
+
+<div class="header">
+	<div class="content">
+		<img src="image/logo-headerr.jpg" alt="">
+		<p>CONCESSIONÁRIAS TOYOTA DO ESTADO DO RIO</p>
+		<a href="https://www.facebook.com/redetoyotarj?fref=ts" target="_blank" style="display:block;"><div class="fb"></div></a>
+	</div>
+</div>
+
+<div class="banner">
+	<ul class="bxslider">
+	  <li><img src="image/banner.jpg" /></li>
+	</ul>
+</div>
+
+<div class="content">
+	<h2>Preencha o cadastro e garanta sua vaga!</h2>
+	<div class="alert" role="alert"></div>
+	<div class="row">
+
+		<form class="cadastro_carteirinha" action="" method="post">
+
+			<div class="col-md-3 col-md-offset-2">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Nº da Carteirinha</span>
+					<input name="carteirinha" type="text" class="form-control carteirinha" placeholder="00..." aria-describedby="basic-addon1">
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Qt. de Acompanhantes</span>
+					<input name="acompanhantes_carteirinha" type="text" class="form-control carteirinha" placeholder="" aria-describedby="basic-addon1">
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="input-group centralizar">
+					<input type="submit" class="botao-enviar" value="Enviar">
+				</div>
+			</div>
+
+		</form>
+		
+	</div>
+
+	<form action="includes/cadastro.php" method="POST" class="form-cadastro">
+		<div class="row">
+			<div class="col-md-9 col-md-offset-2">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Nome completo</span>
+					<input name="nome" type="text" class="form-control" placeholder="digite seu nome completo" aria-describedby="basic-addon1">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 col-md-offset-2">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">E-mail</span>
+					<input name="email" type="text" class="form-control" placeholder="digite seu E-mail" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Acompanhantes</span>
+					<input name="acompanhantes" type="text" class="form-control" placeholder="n°" aria-describedby="basic-addon1">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-md-offset-2	">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Telefone</span>
+					<input name="telefone" type="text" class="form-control" placeholder="telefone+DDD" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Modelo Etios</span>
+					<input name="modelo" type="text" class="form-control" placeholder="modelo" aria-describedby="basic-addon1">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="input-group centralizar">
+					<input type="submit" class="botao-enviar" value="Enviar">
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<div class="container-fluid footer">
+	
+	<!-- <a href="http://www.etiosclube.com.br/" target="_blank"><img src="image/logos/etios.png" alt=""></a> 
+	<img src="image/logos/ponto.png" alt="">
+	<a href="http://vantagenstoyota.com.br/" target="_blank"><img src="image/logos/interjapan.png" alt=""></a>
+	<img src="image/logos/ponto.png" alt="">
+	<a href="http://www.toyota.com.br/" target="_blank"><img src="image/logos/bancotoyota.png" alt=""></a> -->
+
+	<img src="image/footer-marcas.png" alt="">
+
+</div>
+
+<!-- jQuery library (served from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+
+<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?2wTNuHTc0LwoLocCPd7lZcsVv3zRnAlf";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+
+<script type="text/javascript">
+/*function open_modal( id ){
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+  
+  $('#mask').css({'width':maskWidth,'height':maskHeight});
+ 
+  $('#mask').fadeIn(1000);  
+  $('#mask').fadeTo("slow",0.8);  
+  
+  //Get the window height and width
+  var winH = $(window).height() + 800;
+  var winW = $(window).width();
+              
+  $(id).css('top',  winH/3-$(id).height());
+  $(id).css('left', winW/2-$(id).width()/2);
+  $(id).fadeIn(2000); 
+};
+$(document).ready(function() {  
+  
+  $('a[name=modal]').click(function(e) {
+    e.preventDefault();
+    open_modal( $(this).attr('href') ); 
+  });
+  
+  open_modal( '#dialog' );//abrindo o div#modal ao carregar a página
+  
+  $('.window .close').click(function (e) {
+    e.preventDefault();
+    
+    $('#mask').hide();
+    $('.window').hide();
+  });   
+  
+  $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+  });
+});*/
+</script>
+
+</body>
+</html>
