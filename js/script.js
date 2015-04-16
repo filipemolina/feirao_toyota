@@ -14,7 +14,16 @@ $(document).ready(function(){
 
 	// Slider
 
-	$('.bxslider').bxSlider();
+	$('.slider').fractionSlider({
+		'fullWidth': 			true,
+		'controls': 			false, 
+		'pager': 				false,
+		'responsive': 			true,
+		'dimensions': 			"1000,670",
+	    'increase': 			false,
+		'pauseOnHover': 		true,
+		//'slideEndAnimation': 	true
+	});
 
 	// Mostrar o nome do usuário correspondente ao número da carteirinha digitado
 
