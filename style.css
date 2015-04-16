@@ -62,6 +62,35 @@
 
 }
 
+/**************************** Slider ****************************/
+
+.wrapper 
+{
+    background: url(image/slides/fundo.png);
+    background-position: center center;
+}
+
+.slider 
+{
+    margin: 0 auto;
+}
+
+a.oferta 
+{
+  background: url(image/slides/btn_off.png);
+  height: 61px !important;
+  width: 301px !important;
+}
+
+a.oferta:hover
+{
+  background: url(image/slides/btn_hover.png);
+  margin-top: -4px;
+  height: 67px !important;
+}
+
+/**************************** Slider ****************************/
+
 .content
 {
     width: 980px;

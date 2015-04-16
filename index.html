@@ -4,93 +4,8 @@
 	<meta charset="utf-8">
 	<title>Feirão Toyota</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link href="css/jquery.bxslider.css" rel="stylesheet" />
-	<link rel="stylesheet" href="style.css">
-
-<style type="text/css">
-#mask {
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:9000;
-  background-color:#000;
-  display:none;
-}
-  
-#boxes .window {
-  position:absolute;
-  left:0;
-  top:0;
-  width:440px;
-  height:200px;
-  display:none;
-  z-index:9999;
-}
-
-#boxes #dialog {
-width: 802px;
-height: 260px;
-line-height: 22px;	
- font-family: arial;
- background:url(etios-clube-banner_03.jpg) no-repeat;
-}
-
-#boxes #dialog1 {
-  width:375px; 
-  height:203px;
-}
-
-#dialog1 .d-header {
-  background:url(login-header.png) no-repeat 0 0 transparent; 
-  width:375px; 
-  height:150px;
-}
-
-#dialog1 .d-header input {
-  position:relative;
-  top:60px;
-  left:100px;
-  border:3px solid #cccccc;
-  height:22px;
-  width:200px;
-  font-size:15px;
-  padding:5px;
-  margin-top:4px;
-}
-
-#dialog1 .d-blank {
-  float:left;
-  background:url(login-blank.png) no-repeat 0 0 transparent; 
-  width:267px; 
-  height:53px;
-}
-
-#dialog1 .d-login {
-  float:left;
-  width:108px; 
-  height:53px;
-}
-
-#boxes #dialog2 {
-  background:url(notice.png) no-repeat 0 0 transparent; 
-  width:326px; 
-  height:229px;
-  padding:50px 0 20px 25px;
-  font-family: arial;
-}
-.close{
-	display: block;
-	float: right;
-	margin-right: 0px;
-	opacity: 1;
-	margin-top: -4px;
-}
-.close:hover, .close:focus {
-	cursor: pointer; 
-	opacity:1; 
-}
-
-</style>
+	<link href="css/fractionslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">	
 </head>
 
 <body>
@@ -111,11 +26,49 @@ Máscara para cobrir a tela
 	</div>
 </div>
 
-<div class="banner">
+<!-- <div class="banner">
 	<ul class="bxslider">
 	  <li><img src="image/banner.jpg" /></li>
 	</ul>
+</div> -->
+
+<div class="wrapper">
+
+	<div class="slider">
+		
+		<div class="fs_loader"></div>
+		
+		<div class="slide">
+
+			<!-- <img 	src="image/slides/sw4.png"
+					width="690" height="305"			
+					data-position="-152,142" data-in="left" data-delay="200" data-out="right"> -->
+
+			<img 	src="image/slides/logo.png"
+					width="460" height="280"
+					data-position="20,600" data-in="left" data-step="0">
+
+			<img 	src="image/slides/sw4.png"
+					width="690" height="305"
+					data-position="300,342" data-in="right" data-step="1">
+
+			<img 	src="image/slides/texto.png"
+					width="376" height="152"
+					data-position="70,0" data-in="up" data-step="2">
+
+			<img 	src="image/slides/bonus.png"
+					width="254" height="115"
+					data-position="270,0" data-in="down" data-step="3">
+
+			<a href="#" class="oferta"
+				data-position="450,0" data-in="fade" data-step="4"></a>
+			
+		</div>
+
+	</div>
+
 </div>
+
 
 <div class="content">
 	<h2>Preencha o cadastro e garanta sua vaga!</h2>
@@ -215,6 +168,7 @@ Máscara para cobrir a tela
 <!-- bxSlider CSS file -->
 
 <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="js/jquery.fractionslider.min.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 
 <!--Start of Zopim Live Chat Script-->
