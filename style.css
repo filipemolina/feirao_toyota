@@ -101,8 +101,8 @@ a.oferta:hover
 
 .content h2
 {
-    font-family: 'toyota_displaybold';
-    font-size: 42px;
+    font-family: 'toyota_displayregular';
+    font-size: 58px;
     color:#4a4a4a;
     text-align: center;
 }
@@ -239,4 +239,120 @@ input.botao-enviar:hover
   margin: 0;
   font-size: 16px;
   padding: 4px 40px;
+}
+h3{
+     font-family: 'toyota_displaybold';
+     font-size: 41px;
+     color:#a51f21;
+     text-align: center;
+
+}
+.img-rosto{
+    width: 148px;
+    height: 100px;
+    margin:50px  auto 20px;
+}
+.horario{
+    width: 440px;
+    margin:0 auto;
+    text-align: center;
+    height: 120px;
+}
+.horario span{
+    font-family: 'toyota_displayregular';
+    font-size: 20px;
+    color: #4a4a4a;
+    text-align: center;
+
+}
+.contente{
+    width: 980px;
+    margin:0 auto;
+    height: 250px;
+}
+.telefone{
+    width: 460px;
+    height: 220px;
+    float: left;
+    
+}
+.telefone h3{
+    font-family: 'toyota_displaybold';
+    font-size: 27px;
+    color: #4a4a4a;
+    text-align: left;
+    padding-left: 45px;
+    margin-top: 0;
+
+}
+.telefone p{
+     font-family: 'toyota_displayregular';
+     font-size: 17px;
+     color: #4a4a4a;
+     padding-left: 45px;
+}
+.chat{
+    width: 460px;
+    height: 130px;
+    float: left;
+    border-left: 1px solid #8e0b0b;
+}
+.chat h3{
+    font-family: 'toyota_displaybold';
+    font-size: 27px;
+    color: #4a4a4a;
+    text-align: left;
+    padding-left: 45px;
+    margin-top:0;
+
+}
+.chat p{
+     font-family: 'toyota_displayregular';
+     font-size: 17px;
+     color: #4a4a4a;
+     padding-left: 45px;
+}
+.select-telefone{
+    margin-left: 45px;
+    width: 365px;
+    padding: 7px;
+    border-radius: 8px;
+    border-color: #a51f21;
+    color: #272727;
+     font-family: 'toyota_displayregular';
+     font-size: 22px;
+     
+    margin-bottom: 10px;
+    outline: none;
+}
+.local-span{
+    font-family: 'toyota_displaybold';
+    font-size: 20px;
+    color:#272727;
+    padding-left: 50px;
+}
+.telefone-span{
+    font-family: 'toyota_displaybold';
+    font-size: 35px;
+    color:#a51f21;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.button{
+    text-transform: uppercase;
+    width: 210px;
+    height: 38px;
+    border-bottom: 4px solid #760002;
+    background:#a51f21;
+    color: #fff;
+    font-family: 'toyota_displaybold';
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 auto;
+}
+.img-info{
+    margin: 0 auto;
+    width: 330px;
 }
