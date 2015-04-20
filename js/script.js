@@ -2,6 +2,8 @@
 
 App = {};
 
+App.expandido = false;
+
 // Funções globais
 
 function getDados(concessionaria)
@@ -19,8 +21,35 @@ function getDados(concessionaria)
 
 function mostraDados(dados)
 {
-	$("span.local-span").html(dados.nome);
-	$("span.telefone-span").html(dados.telefone);
+	// Aumentar o background e mostrar o telefone
+
+	if(!App.expandido)
+	{
+		$(".contente").animate({ height : "250px" }, 400, 'swing', function(){
+
+			$("span.telefone-span").html(dados.telefone);
+
+			App.expandido = true;
+
+		});
+	}
+	else
+	{
+		$("span.telefone-span").html(dados.telefone);
+	}
+
+	// Caso nenhuma concessionária tenha sido selecinada, diminuir o background
+
+	if(dados.nome == "")
+	{
+		$(".contente").stop().animate({ height: '190px' }, 400, 'swing', function(){
+
+			$("span.telefone-span").html(dados.telefone);
+
+			App.expandido = false;
+
+		});
+	}
 }
 
 // Eventos principais

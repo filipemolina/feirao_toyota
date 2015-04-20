@@ -278,6 +278,7 @@ h3{
     margin:0 auto;
     background: #a51f21;
     padding: 30px 0 0 0;
+    height: 190px;
 }
 .telefone{
     width: 460px;
@@ -353,7 +354,7 @@ h3{
 {
     font-family: 'toyota_displaybold';
     font-size: 35px;
-    color:#a51f21;
+    color:#fff;
     padding-left: 50px;
     padding-top: 10px;
 }
