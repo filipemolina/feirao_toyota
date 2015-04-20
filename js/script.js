@@ -65,7 +65,7 @@ $(document).ready(function(){
 		'responsive': 			true,
 		'dimensions': 			"1000,670",
 	    'increase': 			false,
-		'pauseOnHover': 		true,
+		'pauseOnHover': 		false,
 		//'slideEndAnimation': 	true
 	});
 
@@ -76,6 +76,14 @@ $(document).ready(function(){
 		var concessionaria = $(this).val();
 
 		mostraDados(getDados(concessionaria));
+
+	});
+
+	// Link "Oferta" do slide
+
+	$("a.oferta").click(function(){
+
+		$("body").animate({ scrollTop : 1000 }, 800);
 
 	});
 

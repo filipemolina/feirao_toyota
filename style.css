@@ -1,7 +1,9 @@
 *{
     margin: 0;
-
 }
+
+body { overflow-x: hidden; }
+
 @font-face {
     font-family: 'toyota_displayregular';
     src: url('fonts/toyota_displayregular.eot');
@@ -67,7 +69,8 @@
 .wrapper 
 {
     background: url(image/slides/fundo.png);
-    background-position: center center;
+    background-position: top center;
+    height: 614px;
 }
 
 .slider 
