@@ -306,7 +306,9 @@ h3{
     float: left;
     border-left: 1px solid #ffffff;
 }
-.chat h3{
+
+.chat h3
+{
     font-family: 'toyota_displaybold';
     font-size: 27px;
     color: #ffffff;
@@ -315,13 +317,17 @@ h3{
     margin-top:0;
 
 }
-.chat p{
+
+.chat p
+{
      font-family: 'toyota_displayregular';
      font-size: 17px;
      color: #ffffff;
      padding-left: 45px;
 }
-.select-telefone{
+
+.select-telefone
+{
     margin-left: 45px;
     width: 365px;
     padding: 7px;
@@ -334,13 +340,17 @@ h3{
     margin-bottom: 10px;
     outline: none;
 }
-.local-span{
+
+.local-span
+{
     font-family: 'toyota_displaybold';
     font-size: 20px;
     color:#272727;
     padding-left: 50px;
 }
-.telefone-span{
+
+.telefone-span
+{
     font-family: 'toyota_displaybold';
     font-size: 35px;
     color:#a51f21;
@@ -360,8 +370,12 @@ h3{
     text-align: center;
     padding-top: 8px;
     margin: 0 auto;
+    display: block;
+    text-decoration: none;
 }
-.img-info{
+
+.img-info
+{
     margin: 0 auto;
     width: 330px;
 }
