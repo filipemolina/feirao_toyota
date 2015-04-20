@@ -246,11 +246,19 @@ h3{
      color:#a51f21;
      text-align: center;
 
+     margin-top: 10px;
 }
 .img-rosto{
-    width: 148px;
-    height: 100px;
-    margin:50px  auto 20px;
+    width: 370px;
+    margin: 30px  auto;
+    height: 60px;
+}
+.img-rosto img{
+    float: left;
+}
+.img-rosto span{
+    float: left;
+    margin-top: 25px;
 }
 .horario{
     width: 440px;
@@ -266,9 +274,10 @@ h3{
 
 }
 .contente{
-    width: 980px;
+    width: 940px;
     margin:0 auto;
-    height: 250px;
+    background: #a51f21;
+    padding: 30px 0 0 0;
 }
 .telefone{
     width: 460px;
@@ -279,7 +288,7 @@ h3{
 .telefone h3{
     font-family: 'toyota_displaybold';
     font-size: 27px;
-    color: #4a4a4a;
+    color: #ffffff;
     text-align: left;
     padding-left: 45px;
     margin-top: 0;
@@ -288,21 +297,21 @@ h3{
 .telefone p{
      font-family: 'toyota_displayregular';
      font-size: 17px;
-     color: #4a4a4a;
+     color: #ffffff;
      padding-left: 45px;
 }
 .chat{
     width: 460px;
     height: 130px;
     float: left;
-    border-left: 1px solid #8e0b0b;
+    border-left: 1px solid #ffffff;
 }
 
 .chat h3
 {
     font-family: 'toyota_displaybold';
     font-size: 27px;
-    color: #4a4a4a;
+    color: #ffffff;
     text-align: left;
     padding-left: 45px;
     margin-top:0;
@@ -313,7 +322,7 @@ h3{
 {
      font-family: 'toyota_displayregular';
      font-size: 17px;
-     color: #4a4a4a;
+     color: #ffffff;
      padding-left: 45px;
 }
 
@@ -324,7 +333,7 @@ h3{
     padding: 7px;
     border-radius: 8px;
     border-color: #a51f21;
-    color: #272727;
+    color: #766c6c;
      font-family: 'toyota_displayregular';
      font-size: 22px;
      
@@ -348,29 +357,21 @@ h3{
     padding-left: 50px;
     padding-top: 10px;
 }
-
-.button 
-{
-  text-transform: uppercase;
-  width: 210px;
-  height: 38px;
-  border-bottom: 4px solid #760002;
-  background: #a51f21;
-  color: #fff;
-  font-family: 'toyota_displaybold';
-  font-size: 14px;
-  border-radius: 8px;
-  text-align: center;
-  padding-top: 8px;
-  margin: 0 auto;
-  display: block;
-  text-decoration: none;
-}
-
-a.button:hover 
-{
-  text-decoration: none;
-  color: #fff;
+.button{
+    text-transform: uppercase;
+    width: 210px;
+    height: 38px;
+    border-bottom: 4px solid #b58d00;
+    background: #ffff00;
+    color: #653e00;
+    font-family: 'toyota_displaybold';
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
 }
 
 .img-info
